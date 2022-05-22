@@ -6,7 +6,7 @@ package graphics
 
 import (
 	"errors"
-	"graphics/graphics/convolve"
+	"go-graphics/graphics/convolve"
 	"image"
 	"image/draw"
 	"math"

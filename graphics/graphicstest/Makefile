@@ -4,7 +4,7 @@
 
 include $(GOROOT)/src/Make.inc
 
-TARG=graphics/graphics/graphicstest
+TARG=go-graphics/graphics/graphicstest
 GOFILES=\
 	graphicstest.go\
 

@@ -4,7 +4,7 @@
 
 include $(GOROOT)/src/Make.inc
 
-TARG=graphics/graphics/interp
+TARG=go-graphics/graphics/interp
 GOFILES=\
 	bilinear.go\
 	doc.go\

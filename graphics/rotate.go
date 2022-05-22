@@ -6,7 +6,7 @@ package graphics
 
 import (
 	"errors"
-	"graphics/graphics/interp"
+	"go-graphics/graphics/interp"
 	"image"
 	"image/draw"
 )

@@ -5,7 +5,7 @@
 package graphics
 
 import (
-	"graphics/graphics/graphicstest"
+	"go-graphics/graphics/graphicstest"
 	"image"
 	"math"
 	"testing"

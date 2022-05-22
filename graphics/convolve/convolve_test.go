@@ -5,7 +5,7 @@
 package convolve
 
 import (
-	"graphics/graphics/graphicstest"
+	"go-graphics/graphics/graphicstest"
 	"image"
 	"reflect"
 	"testing"

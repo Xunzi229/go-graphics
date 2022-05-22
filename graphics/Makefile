@@ -4,7 +4,7 @@
 
 include $(GOROOT)/src/Make.inc
 
-TARG=graphics/graphics
+TARG=go-graphics/graphics
 GOFILES=\
 	affine.go\
 	blur.go\
