@@ -5,27 +5,27 @@
 package graphics
 
 import (
-	"errors"
-	"go-graphics/graphics/interp"
-	"image"
-	"image/draw"
+  "errors"
+  "github.com/Xunzi229/go-graphics/graphics/interp"
+  "image"
+  "image/draw"
 )
 
 // Scale produces a scaled version of the image using bilinear interpolation.
 func Scale(dst draw.Image, src image.Image) error {
-	if dst == nil {
-		return errors.New("graphics: dst is nil")
-	}
-	if src == nil {
-		return errors.New("graphics: src is nil")
-	}
-
-	b := dst.Bounds()
-	srcb := src.Bounds()
-	if b.Empty() || srcb.Empty() {
-		return nil
-	}
-	sx := float64(b.Dx()) / float64(srcb.Dx())
-	sy := float64(b.Dy()) / float64(srcb.Dy())
-	return I.Scale(sx, sy).Transform(dst, src, interp.Bilinear)
+  if dst == nil {
+	return errors.New("graphics: dst is nil")
+  }
+  if src == nil {
+	return errors.New("graphics: src is nil")
+  }
+  
+  b := dst.Bounds()
+  srcb := src.Bounds()
+  if b.Empty() || srcb.Empty() {
+	return nil
+  }
+  sx := float64(b.Dx()) / float64(srcb.Dx())
+  sy := float64(b.Dy()) / float64(srcb.Dy())
+  return I.Scale(sx, sy).Transform(dst, src, interp.Bilinear)
 }
